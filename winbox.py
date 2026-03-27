@@ -68,7 +68,7 @@ import Cocoa
 let winboxPath = "{winbox_path}"
 
 class AppDelegate: NSObject, NSApplicationDelegate {{
-    func applicationDidFinishLaunching(_ notification: Notification) {{
+    func applicationWillFinishLaunching(_ notification: Notification) {{
         NSAppleEventManager.shared().setEventHandler(
             self,
             andSelector: #selector(handleGetURL(event:reply:)),
